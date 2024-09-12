@@ -1,0 +1,13 @@
+{% extends 'mis_notas/base.html' %}
+
+{% block content %}
+
+<h2>{{mensaje}}</h2>
+
+<script type="text/javascript">
+    setTimeout(function(){
+        window.location.href = "{% url 'Notes' %}";
+    }, 1500);  // 5000 milisegundos = 5 segundos
+</script>
+
+{% endblock %}
